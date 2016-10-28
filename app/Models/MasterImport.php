@@ -23,27 +23,27 @@ class MasterImport extends Model {
      */
     // protected $primaryKey = null;
 
-//    public $AmountPaid;
-//    public $InvoiceAmount;
-//    public $ShipDate;
-//    public $ShipmentNumber;
-//    public $InvoiceNumber;
-//    public $BillOfLading;
-//    public $CarrierName;
-//    public $CheckNumber;
-//    public $CheckDate;
-//    public $RunNumber;
-//    public $ShipperCity;
-//    public $ShipperState;
-//    public $ShipperName;
-//    public $ConsigneeCity;
-//    public $ConsigneeState;
-//    public $ConsigneeName;
-//    public $BatchNumber;
-//    public $ActualWeight;
-//    public $Location;
-//    public $Link;
-//    public $Division;
+    public $AmountPaid;
+    public $InvoiceAmount;
+    public $ShipDate;
+    public $ShipmentNumber;
+    public $InvoiceNumber;
+    public $BillOfLading;
+    public $CarrierName;
+    public $CheckNumber;
+    public $CheckDate;
+    public $RunNumber;
+    public $ShipperCity;
+    public $ShipperState;
+    public $ShipperName;
+    public $ConsigneeCity;
+    public $ConsigneeState;
+    public $ConsigneeName;
+    public $BatchNumber;
+    public $ActualWeight;
+    public $Location;
+    public $Link;
+    public $Division;
 
     protected $fillable = [
         'AmountPaid',
