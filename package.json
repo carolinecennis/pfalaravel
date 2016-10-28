@@ -1,0 +1,17 @@
+{
+  "name": "bibelot-build",
+  "description": "Bibelot Exchange build system",
+  "private": true,
+  "license": "UNLICENSED",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^5.0.0",
+    "bootstrap-sass": "^3.0.0"
+  },
+  "scripts": {
+    "postinstall": "ln -sf ../node_modules/.bin/gulp bin/gulp",
+    "prod": "bin/gulp --production",
+    "dev": "bin/gulp watch"
+  }
+}

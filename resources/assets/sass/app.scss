@@ -1,0 +1,939 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+html {
+  font-size: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* 2 */
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #3a3a3a;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  /*margin: 0 0;*/
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+p,
+pre {
+  margin: 1em 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%; /* 1 */
+  margin: 0; /* 2 */
+  vertical-align: baseline; /* 3 */
+  *vertical-align: middle; /* 3 */
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+  *overflow: visible;  /* 4 */
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto; /* 1 */
+  vertical-align: top; /* 2 */
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+}
+table th {
+  padding-right: 40px;
+}
+
+html {overflow-y: scroll; overflow-x: hidden;}
+/*body {font-family: 'Open Sans', sans-serif; background:#f0eeed; color: #676767;}*/
+
+.wrapper {width: 70%; margin: auto;}
+#content {padding: 20px 0 80px;}
+.header:after {content:"";height:0;display:block;visibility:hidden;clear:both;}
+.header {border-bottom: 3px solid #db7a78;}
+.header .brand {
+  color: White;
+  float: left;
+  padding:0 16px 0 0;}
+.header .nav {float: right; right: 0; margin: 0; position: relative; left: 15px; z-index: 99999999;}
+.header .nav li {display: inline-block; margin: 0; list-style: none;}
+.header .nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  line-height: 95px;
+  padding: 10px 0 0;
+  margin: 0 0 0 50px;
+  width: 100px;
+  text-align: left;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.header .nav li.on a {text-decoration:underline;}
+.header .nav li a:hover, .header .nav li a:active {opacity: 0.7;}
+.header .nav li.columns a {background-position: 8px -5px;}
+.header .nav li.delete a {background-position: 13px -105px;}
+.header .nav li.validate a {background-position: 16px -235px;}
+
+.header {
+  background: #3acec2;
+  display: block;
+}
+.section.page h1 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+
+#content {min-height: 400px; background: white;}
+.section.page:after {content:"";display:block;visibility:hidden;height:0;clear:both;}
+.section.page {padding: 30px 0; background: white;}
+.section.page h1 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.section.page p {width: 475px; margin-left: auto; margin-right: auto;}
+.section.page .media-details h1 .price {color: #0000A0; padding-right: 10px; font-size: 34px;}
+.section.catalog {padding-bottom: 42px;}
+.section.catalog h2 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: normal;
+  padding-top: 20px;
+}
+form[name= "border"] {width: 475px;
+  margin: 50px auto;
+  border : 1px solid #000;
+  padding : 10px;
+  padding-top: 5%}
+form tr, tr {text-align:left;vertical-align: top; padding:2px;}
+form table {width: 475px; margin-bottom: 30px;}
+form th {
+  width: 150px;
+  vertical-align: middle;
+  padding: 8px;
+}
+form td, select {
+  padding: 15px 15px;
+}
+form td select,
+form td input,
+form td textarea {
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid #a5a5a5;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+form input[type="submit"] {
+  width: 475px;
+  text-align: center;
+  border: 0;
+  background: #DC143C;
+  color: #FFF;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 14px 0 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+select {
+  width: 50%;
+  text-align: left;
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid #a5a5a5;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+form input[type="submit"]:hover {
+  background: #FF0000;
+  cursor: pointer;
+}
+
+form[name= "no border"] {width: 475px;
+  margin: 50px auto;
+  padding : 10px;
+  padding-top: 5%}
+form tr, tr {text-align:left;vertical-align: top; padding:2px;}
+form table {width: 475px; margin-bottom: 30px;}
+form th {
+  width: 150px;
+  vertical-align: middle;
+  padding: 8px;
+}
+form td {
+  padding: 15px 15px;
+}
+form td select,
+form td input,
+form td textarea {
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid #a5a5a5;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+form input[type="submit"] {
+  width: 475px;
+  text-align: center;
+  border: 0;
+  background: #DC143C;
+  color: #FFF;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 14px 0 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+form input[type="submit"]:hover {
+  background: #FF0000;
+  cursor: pointer;
+}
+
+
+#box-table-b
+{
+  border-collapse: collapse;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  margin: 50px auto;
+  border-collapse: collapse;
+  border: 2px solid #3acec2;
+}
+#box-table-b th
+{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background: #d9e4ea;
+  border: 2px solid #3acec2;
+  color: Black;
+}
+#box-table-b td
+{
+  padding: 10px;
+  background: #FFFFFF;
+  border: 2px solid #3acec2;
+  color: Black;
+  max-width:50px;
+  width:auto;
+  min-width:10px;
+}
+
+.box-table-b {
+  display: inline-block;
+}
+
+.buttonHolder{ text-align: center; }
+.buttonHolder input[type="submit"] {
+  vertical-align: top; padding:2px;
+  width: 475px;
+  text-align: center;
+  border: 0;
+  background: #DC143C;
+  color: #FFF;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 14px 0 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search-table-outer { overflow-x: scroll; text-align: center;  }
+th, td { min-width: 100px; }
+.search-form input[type="submit"] {
+  width: 475px;
+  text-align: center;
+  border: 0;
+  background: #DC143C;
+  color: #FFF;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 14px 0 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+#reports{
+  display: block;
+  overflow-x: auto;
+}
+.reports td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footer {
+  border-top: 2px solid #3acec2;
+  text-align: center;
+  padding: 2em;
+  background: #d9e4ea;
+}
+
+.bootstrap
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.bootstrap
+body {
+  margin: 0;
+}
+
+.bootstrap
+a {
+  background-color: transparent;
+}
+.bootstrap
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+.bootstrap
+b, .bootstrap
+strong {
+  font-weight: bold;
+}
+.bootstrap
+dfn {
+  font-style: italic;
+}
+/*.bootstrap*/
+/*h1 {*/
+/*font-size: 2em;*/
+/*margin: 0.67em 0;*/
+/*}*/
+
+.bootstrap
+img {
+  border: 0;
+}
+.bootstrap
+svg:not(:root) {
+  overflow: hidden;
+}
+.bootstrap
+figure {
+  margin: 1em 40px;
+}
+.bootstrap
+hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+.bootstrap
+pre {
+  overflow: auto;
+}
+
+.bootstrap
+button {
+  overflow: visible;
+}
+.bootstrap
+button, .bootstrap
+select {
+  text-transform: none;
+}
+.bootstrap
+button, .bootstrap
+html input[type="button"], .bootstrap
+input[type="reset"], .bootstrap
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.bootstrap
+button[disabled], .bootstrap
+html input[disabled] {
+  cursor: default;
+}
+.bootstrap
+button::-moz-focus-inner, .bootstrap
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.bootstrap
+input {
+  line-height: normal;
+}
+.bootstrap
+input[type="checkbox"], .bootstrap
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+.bootstrap
+input[type="number"]::-webkit-inner-spin-button, .bootstrap
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+.bootstrap
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.bootstrap
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+.bootstrap
+legend {
+  border: 0;
+  padding: 0;
+}
+.bootstrap
+textarea {
+  overflow: auto;
+}
+.bootstrap
+optgroup {
+  font-weight: bold;
+}
+.bootstrap
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.bootstrap
+td, .bootstrap
+th {
+  padding: 0;
+}
+.bootstrap
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bootstrap
+*:before, .bootstrap
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bootstrap
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.bootstrap
+body {
+  font-family: "Helvetica Neue", Helvetica,  Arial,  sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ffffff;
+}
+.bootstrap
+input, .bootstrap
+button, .bootstrap
+select, .bootstrap
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.bootstrap
+a {
+  color: White;
+  text-decoration: none;
+}
+.bootstrap
+a:hover,
+a:focus {
+  color: White;
+  text-decoration: underline;
+}
+.bootstrap
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.bootstrap
+figure {
+  margin: 0;
+}
+.bootstrap
+img {
+  vertical-align: middle;
+}
+.bootstrap
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.bootstrap
+.img-rounded {
+  border-radius: 6px;
+}
+.bootstrap
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.bootstrap
+.img-circle {
+  border-radius: 50%;
+}
+.bootstrap
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+.bootstrap
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.bootstrap
+.sr-only-focusable:active, .bootstrap
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+.bootstrap
+[role="button"] {
+  cursor: pointer;
+}
+.bootstrap
+table {
+  background-color: transparent;
+}
+.bootstrap
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #777777;
+  text-align: left;
+}
+.bootstrap
+th {
+  text-align: left;
+}
+.bootstrap
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.bootstrap
+.table > thead > tr > th, .bootstrap
+.table > tbody > tr > th, .bootstrap
+.table > tfoot > tr > th, .bootstrap
+.table > thead > tr > td, .bootstrap
+.table > tbody > tr > td, .bootstrap
+.table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+.bootstrap
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dddddd;
+}
+.bootstrap
+.table > caption + thead > tr:first-child > th, .bootstrap
+.table > colgroup + thead > tr:first-child > th, .bootstrap
+.table > thead:first-child > tr:first-child > th, .bootstrap
+.table > caption + thead > tr:first-child > td, .bootstrap
+.table > colgroup + thead > tr:first-child > td, .bootstrap
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.bootstrap
+.table > tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+.bootstrap
+.table .table {
+  background-color: #ffffff;
+}
+.bootstrap
+.table-condensed > thead > tr > th, .bootstrap
+.table-condensed > tbody > tr > th, .bootstrap
+.table-condensed > tfoot > tr > th, .bootstrap
+.table-condensed > thead > tr > td, .bootstrap
+.table-condensed > tbody > tr > td, .bootstrap
+.table-condensed > tfoot > tr > td {
+  padding: 5px;
+}
+.bootstrap
+.table-bordered {
+  border: 1px solid #dddddd;
+}
+.bootstrap
+.table-bordered > thead > tr > th, .bootstrap
+.table-bordered > tbody > tr > th, .bootstrap
+.table-bordered > tfoot > tr > th, .bootstrap
+.table-bordered > thead > tr > td, .bootstrap
+.table-bordered > tbody > tr > td, .bootstrap
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #dddddd;
+}
+.bootstrap
+.table-bordered > thead > tr > th, .bootstrap
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+.bootstrap
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+.bootstrap
+.table-hover > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+.bootstrap
+table col[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-column;
+}
+.bootstrap
+table td[class*="col-"], .bootstrap
+table th[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-cell;
+}
+.bootstrap
+.table > thead > tr > td.active, .bootstrap
+.table > tbody > tr > td.active, .bootstrap
+.table > tfoot > tr > td.active, .bootstrap
+.table > thead > tr > th.active, .bootstrap
+.table > tbody > tr > th.active, .bootstrap
+.table > tfoot > tr > th.active, .bootstrap
+.table > thead > tr.active > td, .bootstrap
+.table > tbody > tr.active > td, .bootstrap
+.table > tfoot > tr.active > td, .bootstrap
+.table > thead > tr.active > th, .bootstrap
+.table > tbody > tr.active > th, .bootstrap
+.table > tfoot > tr.active > th {
+  background-color: #f5f5f5;
+}
+.bootstrap
+.table-hover > tbody > tr > td.active:hover, .bootstrap
+.table-hover > tbody > tr > th.active:hover, .bootstrap
+.table-hover > tbody > tr.active:hover > td, .bootstrap
+.table-hover > tbody > tr:hover > .active, .bootstrap
+.table-hover > tbody > tr.active:hover > th {
+  background-color: #e8e8e8;
+}
+.bootstrap
+.table > thead > tr > td.success, .bootstrap
+.table > tbody > tr > td.success, .bootstrap
+.table > tfoot > tr > td.success, .bootstrap
+.table > thead > tr > th.success, .bootstrap
+.table > tbody > tr > th.success, .bootstrap
+.table > tfoot > tr > th.success, .bootstrap
+.table > thead > tr.success > td, .bootstrap
+.table > tbody > tr.success > td, .bootstrap
+.table > tfoot > tr.success > td, .bootstrap
+.table > thead > tr.success > th, .bootstrap
+.table > tbody > tr.success > th, .bootstrap
+.table > tfoot > tr.success > th {
+  background-color: #dff0d8;
+}
+.bootstrap
+.table-hover > tbody > tr > td.success:hover, .bootstrap
+.table-hover > tbody > tr > th.success:hover, .bootstrap
+.table-hover > tbody > tr.success:hover > td, .bootstrap
+.table-hover > tbody > tr:hover > .success, .bootstrap
+.table-hover > tbody > tr.success:hover > th {
+  background-color: #d0e9c6;
+}
+.bootstrap
+.table > thead > tr > td.info, .bootstrap
+.table > tbody > tr > td.info, .bootstrap
+.table > tfoot > tr > td.info, .bootstrap
+.table > thead > tr > th.info, .bootstrap
+.table > tbody > tr > th.info, .bootstrap
+.table > tfoot > tr > th.info, .bootstrap
+.table > thead > tr.info > td, .bootstrap
+.table > tbody > tr.info > td, .bootstrap
+.table > tfoot > tr.info > td, .bootstrap
+.table > thead > tr.info > th, .bootstrap
+.table > tbody > tr.info > th, .bootstrap
+.table > tfoot > tr.info > th {
+  background-color: #d9edf7;
+}
+.bootstrap
+.table-hover > tbody > tr > td.info:hover, .bootstrap
+.table-hover > tbody > tr > th.info:hover, .bootstrap
+.table-hover > tbody > tr.info:hover > td, .bootstrap
+.table-hover > tbody > tr:hover > .info, .bootstrap
+.table-hover > tbody > tr.info:hover > th {
+  background-color: #c4e3f3;
+}
+.bootstrap
+.table > thead > tr > td.warning, .bootstrap
+.table > tbody > tr > td.warning, .bootstrap
+.table > tfoot > tr > td.warning, .bootstrap
+.table > thead > tr > th.warning, .bootstrap
+.table > tbody > tr > th.warning, .bootstrap
+.table > tfoot > tr > th.warning, .bootstrap
+.table > thead > tr.warning > td, .bootstrap
+.table > tbody > tr.warning > td, .bootstrap
+.table > tfoot > tr.warning > td, .bootstrap
+.table > thead > tr.warning > th, .bootstrap
+.table > tbody > tr.warning > th, .bootstrap
+.table > tfoot > tr.warning > th {
+  background-color: #fcf8e3;
+}
+.bootstrap
+.table-hover > tbody > tr > td.warning:hover, .bootstrap
+.table-hover > tbody > tr > th.warning:hover, .bootstrap
+.table-hover > tbody > tr.warning:hover > td, .bootstrap
+.table-hover > tbody > tr:hover > .warning, .bootstrap
+.table-hover > tbody > tr.warning:hover > th {
+  background-color: #faf2cc;
+}
+.bootstrap
+.table > thead > tr > td.danger, .bootstrap
+.table > tbody > tr > td.danger, .bootstrap
+.table > tfoot > tr > td.danger, .bootstrap
+.table > thead > tr > th.danger, .bootstrap
+.table > tbody > tr > th.danger, .bootstrap
+.table > tfoot > tr > th.danger, .bootstrap
+.table > thead > tr.danger > td, .bootstrap
+.table > tbody > tr.danger > td, .bootstrap
+.table > tfoot > tr.danger > td, .bootstrap
+.table > thead > tr.danger > th, .bootstrap
+.table > tbody > tr.danger > th, .bootstrap
+.table > tfoot > tr.danger > th {
+  background-color: #f2dede;
+}
+.bootstrap
+.table-hover > tbody > tr > td.danger:hover, .bootstrap
+.table-hover > tbody > tr > th.danger:hover, .bootstrap
+.table-hover > tbody > tr.danger:hover > td, .bootstrap
+.table-hover > tbody > tr:hover > .danger, .bootstrap
+.table-hover > tbody > tr.danger:hover > th {
+  background-color: #ebcccc;
+}
+.bootstrap
+.table-responsive {
+  overflow-x: auto;
+  min-height: 0.01%;
+}
+.bootstrap
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #dddddd;
+  }
+  .bootstrap
+  .table-responsive > .table {
+    margin-bottom: 0;
+  }
+  .bootstrap
+  .table-responsive > .table > thead > tr > th, .bootstrap
+  .table-responsive > .table > tbody > tr > th, .bootstrap
+  .table-responsive > .table > tfoot > tr > th, .bootstrap
+  .table-responsive > .table > thead > tr > td, .bootstrap
+  .table-responsive > .table > tbody > tr > td, .bootstrap
+  .table-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+  .bootstrap
+  .table-responsive > .table-bordered {
+    border: 0;
+  }
+  .bootstrap
+  .table-responsive > .table-bordered > thead > tr > th:first-child, .bootstrap
+  .table-responsive > .table-bordered > tbody > tr > th:first-child, .bootstrap
+  .table-responsive > .table-bordered > tfoot > tr > th:first-child, .bootstrap
+  .table-responsive > .table-bordered > thead > tr > td:first-child, .bootstrap
+  .table-responsive > .table-bordered > tbody > tr > td:first-child, .bootstrap
+  .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+    border-left: 0;
+  }
+  .bootstrap
+  .table-responsive > .table-bordered > thead > tr > th:last-child, .bootstrap
+  .table-responsive > .table-bordered > tbody > tr > th:last-child, .bootstrap
+  .table-responsive > .table-bordered > tfoot > tr > th:last-child, .bootstrap
+  .table-responsive > .table-bordered > thead > tr > td:last-child, .bootstrap
+  .table-responsive > .table-bordered > tbody > tr > td:last-child, .bootstrap
+  .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+    border-right: 0;
+  }
+  .bootstrap
+  .table-responsive > .table-bordered > tbody > tr:last-child > th, .bootstrap
+  .table-responsive > .table-bordered > tfoot > tr:last-child > th, .bootstrap
+  .table-responsive > .table-bordered > tbody > tr:last-child > td, .bootstrap
+  .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+    border-bottom: 0;
+  }
+  .bootstrap
+}
+.bootstrap
+.clearfix:before, .bootstrap
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.bootstrap
+.clearfix:after {
+  clear: both;
+}
+.bootstrap
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bootstrap
+.pull-right {
+  float: right !important;
+}
+.bootstrap
+.pull-left {
+  float: left !important;
+}
+.bootstrap
+.hide {
+  display: none !important;
+}
+.bootstrap
+.show {
+  display: block !important;
+}
+.bootstrap
+.invisible {
+  visibility: hidden;
+}
+.bootstrap
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.bootstrap
+.hidden {
+  display: none !important;
+}
+.bootstrap
+.affix {
+  position: fixed;
+}
+

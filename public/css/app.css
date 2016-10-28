@@ -1,0 +1,28 @@
+body {
+  font-family: 'Lato'; }
+
+.fa-btn {
+  margin-right: 6px; }
+
+.item-carousel {
+  margin-bottom: 16px; }
+
+.item-info tbody {
+  vertical-align: top; }
+  .item-info tbody td {
+    padding-right: 6px; }
+
+.item-user-info {
+  float: left;
+  width: 60%; }
+  .item-user-info tbody {
+    vertical-align: top; }
+    .item-user-info tbody td {
+      padding-right: 6px; }
+
+.item-user-profile-image {
+  float: right;
+  height: 192px;
+  width: 192px; }
+
+/*# sourceMappingURL=app.css.map */
